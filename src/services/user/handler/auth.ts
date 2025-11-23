@@ -8,6 +8,7 @@ import { StatusCode } from '../../../constants/statusCode.js';
 import { getUniqueUserName } from '../../../utils/uniqueUserName.js';
 import { AuthenticatedRequest } from '../types.js';
 
+
 export const RegisterUser = async (body: any, files?: any) => {
   const { success, data, error } = userRegisterSchema.safeParse(body);
 
